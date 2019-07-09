@@ -1,11 +1,15 @@
+#!/usr/bin/env python3
+# coding: utf-8
+
 import os
 import sys
 import socket
-from time import sleep
+
 from pyA20.gpio import gpio
 from pyA20.gpio import port
+from time import sleep
 
-HOST = '127.0.0.1'  # Standard loopback interface address (localhost)
+HOST = '192.168.0.150'  # Standard loopback interface address (localhost)
 PORT = 9000        # Port to listen on (non-privileged ports are > 1023)
 
 led = port.PA12
